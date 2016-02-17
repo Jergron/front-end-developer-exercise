@@ -3,45 +3,67 @@ body, html {
   padding: 0;
   background-color: #bbbfc2 !important; }
 
-span {
+.babyStep1,
+.babyStep2,
+.babyStep3,
+.babyStep4,
+.babyStep5,
+.babyStep6,
+.babyStep7 {
   display: none; }
 
-.showBS1:hover ~ span {
-  display: block; }
-
-.babyStepsNav {
-  padding-left: 0;
-  list-style-type: none;
+.showBS1,
+.showBS2,
+.showBS3,
+.showBS4,
+.showBS5,
+.showBS6,
+.showBS7 {
   background-image: linear-gradient(to right, #ebeced 90%, #d1d5d6);
-  text-align: right;
-  margin-right: 70px;
   cursor: pointer;
+  float: left;
+  list-style-type: none;
+  margin-right: 70px;
   padding-left: 0;
-  float: left; }
-  .babyStepsNav li {
-    margin-top: -10px;
-    padding: 0px;
-    height: 50px; }
-  .babyStepsNav p:hover {
-    background-color: white;
-    height: 61px;
-    color: #36abe1;
-    font-weight: 400; }
-  .babyStepsNav p {
-    margin: 0px;
-    padding: 0px;
+  text-align: right; }
+  .showBS1 p,
+  .showBS2 p,
+  .showBS3 p,
+  .showBS4 p,
+  .showBS5 p,
+  .showBS6 p,
+  .showBS7 p {
+    margin: 0;
+    padding: 0;
     color: #9ba0a4;
     line-height: 60px;
     font-size: 18px;
     font-weight: 300;
     font-family: 'Source Sans Pro', sans-serif; }
-  .babyStepsNav p > img {
+  .showBS1 p:hover,
+  .showBS2 p:hover,
+  .showBS3 p:hover,
+  .showBS4 p:hover,
+  .showBS5 p:hover,
+  .showBS6 p:hover,
+  .showBS7 p:hover {
+    background-color: white;
+    color: #36abe1;
+    font-weight: 400; }
+  .showBS1 p > img,
+  .showBS2 p > img,
+  .showBS3 p > img,
+  .showBS4 p > img,
+  .showBS5 p > img,
+  .showBS6 p > img,
+  .showBS7 p > img {
     margin-left: 24px;
     margin-right: 24px; }
 
 .babyStepsNav > img {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  margin-top: -21px;
   filter: contrast(2);
   -webkit-filter: contrast(2);
   -moz-filter: contrast(2);
@@ -59,7 +81,13 @@ span {
   max-width: 890px; }
 
 .description {
-  margin-right: 70px; }
+  margin-left: 29em;
+  margin-right: 70px;
+  padding-left: 0;
+  font-family: Helvetica;
+  font-size: 13px;
+  color: #65686f;
+  line-height: 18px; }
 
 .leftShadow {
   margin-left: -15px;
@@ -70,6 +98,48 @@ span {
   margin-right: -15px;
   height: 100%;
   float: right; }
+
+.showBS1:hover ~ .babyStep1 {
+  display: block; }
+
+.showBS2 {
+  clear: both;
+  margin-top: -25em; }
+
+.showBS2:hover ~ .babyStep2 {
+  display: block; }
+
+.showBS3 {
+  margin-top: -20em; }
+
+.showBS3:hover ~ .babyStep3 {
+  display: block; }
+
+.showBS4 {
+  margin-top: -15em; }
+
+.showBS4:hover ~ .babyStep4 {
+  display: block; }
+
+.showBS5 {
+  margin-top: -10em; }
+
+.showBS5:hover ~ .babyStep5 {
+  display: block; }
+
+.showBS6 {
+  margin-top: -5em; }
+
+.showBS6:hover ~ .babyStep6 {
+  display: block; }
+
+.showBS7 {
+  margin-top: -8px;
+  clear: both;
+  padding-bottom: 24.2%; }
+
+.showBS7:hover ~ .babyStep7 {
+  display: block; }
 
 .stepTitle {
   color: #36abe1;
